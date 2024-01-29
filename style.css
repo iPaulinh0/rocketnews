@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background: black;
+    width: 100%;
+    min-width: 1440px;
+    
+}
+
+#left-side {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    min-width: 50%;
+}
+
+#rn-logo {
+    padding: 50px 301px 92px 30px;
+    width: 100%;;
+}
+
+#p-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+
+    padding: 0 37px 0 36px;
+
+    color: #08c05e;
+}
+
+#p-1 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+
+    padding: 9px 37px 0 36px;
+}
+
+#p-2 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+
+    padding: 9px 37px 50px 36px;
+}
+
+#p-3 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #a8a8a8;
+    padding: 0 0 17px 36px;
+}
+
+#email-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 36px;
+}
+
+#email-form a {
+    display: flex;
+    align-items: center;
+
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8257E5;
+
+    text-decoration: none;
+    
+    padding-top: 75px
+}
+
+#email-form img {
+    padding-left: 5px;
+}
+
+#form {
+    display: flex;
+    position: absolute;
+
+    box-shadow: 12px -4px 29px -4px rgba(0, 0, 0, 0.75);
+}
+
+#form input {
+    width: 750px;
+    height: 48px;
+
+    border: none;
+    border-left: 5px solid #08c05e;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    color: #6a6a6a;
+
+    padding: 17px 0 17px 10px;
+}
+
+#form button {
+    width: 48px;
+    height: 48px;
+
+    border: none;
+
+    background-color: #8257E5;
+}
+
+#right-side {
+    width: 100vw;
+    border-color: red;
+    background: url(./assets/bg-right.png)top right/cover;
+}
+
+@media (min-width: 1441px) {
+    
+    #p-title {
+        font-size: calc(24px * 1.5);
+    }
+    
+    #p-1 {
+        font-size: calc(14px * 1.8);
+    }
+    
+    #p-2 {
+        font-size: calc(14px * 1.8);
+    }
+
+    #p-3 {
+        font-size: calc(14px * 1.8);
+    }
+
+    #email-form a {
+        padding-top: 100px;
+        font-size: calc(14px * 1.5);
+    }
+
+    #form input {
+        width: calc(750px * 1.2);
+        height: calc(48px * 1.2);
+    }
+
+    #form button {
+        width: calc(48px * 1.2);
+        height: calc(48px * 1.2);
+    }
+
+}
+
+@media (max-width: 980px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+    }
+
+    #right-side {
+        display: none;
+    }
+
+    #form {
+        position: static;
+        width: 100%;
+        padding-right: 37px;
+    }
+}
+
+@media (max-width: 640px) {
+    #left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 15px;
+    }
+
+    #rn-logo {
+        padding: 25px 0 42px 18px;
+        width: 50%;
+    }
+
+    #email-form {
+        padding: 0;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    #form {
+        position: static;
+        width: 90vw;
+        padding: 0;
+        align-items: center;
+    }
+
+    #p-3 {
+        padding: 0 0 17px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    #p-title {
+        font-size: 100%;
+    }
+    #p-1 {
+        font-size: 85%;
+    }
+    #p-2 {
+        font-size: 75%;
+    }
+}
