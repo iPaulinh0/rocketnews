@@ -134,6 +134,10 @@ a:hover {
     background-color: #9679da;
 }
 
+#form button p {
+    display: none;
+}
+
 #right-side {
     width: 100vw;
     border-color: red;
@@ -225,7 +229,7 @@ a:hover {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     #p-title {
         font-size: 100%;
     }
@@ -251,14 +255,17 @@ a:hover {
         align-items: center;
         justify-content: center;
 
+        margin-top: 5px;
+        width: 85px;
+        height: 36px;
+    }
+
+    #form button p {
+        display: block;
         font-family: 'League Spartan', sans-serif;
         font-size: 14px;
         font-weight: 400;
         color: #fff;
-
-        margin-top: 5px;
-        width: 85px;
-        height: 36px;
     }
 
     #form button img {
