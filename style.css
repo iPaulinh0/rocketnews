@@ -77,7 +77,15 @@ body {
 
     text-decoration: none;
     
-    padding-top: 75px
+    padding-top: 75px;
+
+    transition: color 0.2s;
+    transition: font-size 0.2s
+}
+
+#email-form a:hover {
+    color: #9679da;
+    font-size: 1.5rem;
 }
 
 #email-form img {
@@ -103,6 +111,12 @@ body {
     color: #6a6a6a;
 
     padding: 17px 0 17px 10px;
+
+    transition: outline 0.2s
+}
+
+#form input:focus {
+    outline: 1px solid #08c05e;
 }
 
 #form button {
@@ -112,6 +126,11 @@ body {
     border: none;
 
     background-color: #8257E5;
+    transition: background-color 0.2s;
+}
+
+#form button:hover {
+    background-color: #9679da;
 }
 
 #right-side {
